@@ -9,7 +9,7 @@ export const simpleDebounce = (
   let timeoutId: ReturnType<typeof setTimeout>;
 
   return (...args: any[]) => {
-    // execute this if this func keeps getting called
+    // clear func as it keeps getting called ~ debounce!
     if (timeoutId) {
       clearTimeout(timeoutId);
     }
